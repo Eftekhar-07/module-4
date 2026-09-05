@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position Practice</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .main-section {
+      position: relative;
+      border: 3px dashed #333;
+      padding: 20px;
+      margin: 40px;
+      height: 300px;
+      background-color: #f9f9f9;
+    }
+
+    .item {
+      width: 120px;
+      height: 60px;
+      color: white;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+
+    .normal-item {
+      position: static;
+      background-color: #34495e;
+      top: 20px;
+    }
+
+    .moved-item {
+      position: relative;
+      top: 20px;
+      left: 30px;
+      background-color: #3498db;
+    }
+
+    .corner-item {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: #e74c3c;
+    }
+
+    .action-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #9b59b6;
+    }
+
+    .navigation-bar {
+      position: sticky;
+      top: 0;
+      background-color: #2ecc71;
+      margin-bottom: 30px;
+      width: 100%;
+      z-index: 1;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="item navigation-bar">My Story</div>
+
+  <p>
+    One morning, Tom woke up early and decided to go for a walk in the park.
+    The weather was cool and the birds were singing.
+  </p>
+
+  <div class="main-section">
+
+    <div class="item normal-item">Tom</div>
+
+    <div class="item moved-item">Friend</div>
+
+    <div class="item corner-item">Dog</div>
+
+  </div>
+
+  <input class="item action-button" type="button" value="Top" />
+
+  <p>
+    While walking, Tom saw his old friend Sam near a large tree.
+    They talked for a few minutes and decided to walk together.
+  </p>
+
+  <p>
+    Suddenly, they heard a small dog barking. The dog had lost its owner,
+    so Tom and Sam gave it some water and stayed with it.
+  </p>
+
+  <p>
+    After a while, a little boy came running toward them. He was happy to
+    find his dog again. Tom and Sam smiled and continued their walk.
+  </p>
+
+</body>
+
+</html>
